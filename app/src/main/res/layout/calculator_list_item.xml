@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/llCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <hearsilent.discreteslider.DiscreteSlider
+            android:id="@+id/discreteSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:paddingLeft="10dp"
+            android:paddingTop="60dp"
+            app:ds_count="100"
+            app:ds_valueLabelGravity="left"
+            app:ds_inactiveTrackColor="#2e2e2d"
+            app:ds_thumbColor="@color/golden_color"
+            app:ds_tickMarkColor="@color/purple_700"
+            app:ds_tickMarkInactiveColor="@color/golden_color"
+            app:ds_trackColor="@color/golden_color"
+            app:ds_trackWidth="9dp"
+            app:ds_thumbRadius="6dp"
+
+            app:ds_valueLabelDuration="0"
+            app:ds_valueLabelMode="showOnPressHold"
+            app:ds_valueLabelTextColor="#fff"
+            app:ds_valueLabelTextSize="@dimen/_20sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/simpleSeekBar"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="0.45"
+                    android:fontFamily="@font/poppins_medium"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp" />
+
+
+                <EditText
+                    android:id="@+id/etEnterValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/round_editview"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#80EEEEEE"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:id="@+id/tvTotalAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.25"
+                    android:background="@null"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:hint="0"
+
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textColorHint="#80EEEEEE"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llTotalCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llViewLayout"
+                android:gravity="left|center"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:text="Total Amount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/tvTotalAddAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="0.33"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/llViewLayout"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="1dp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/simpleSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llCalculator"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/rounded_bg"
+        android:max="100"
+        android:padding="2dp"
+        android:theme="@style/SeekBarColor"
+        android:thumb="@drawable/ic_progress"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

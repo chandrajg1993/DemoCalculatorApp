@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="search_by_name">Search</string>
+    <string name="_7_n_bonus_0"><![CDATA[<7\n Bonus 0]]></string>
+    <string name="_7_n_bonus_7"><![CDATA[>7\n Bonus 1%]]></string>
+    <string name="_7_n_bonus_14"><![CDATA[>14\n Bonus 2%]]></string>
+    <string name="_7_n_bonus_21"><![CDATA[>21\n Bonus 3%]]></string>
+</resources>

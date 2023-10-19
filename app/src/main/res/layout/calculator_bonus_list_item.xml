@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <!--
+        <TextView
+            android:id="@+id/tvBonusZero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/btn_round"
+            android:buttonTint="@android:color/transparent"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/_7_n_bonus_0"
+            android:textColor="@color/black" />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:id="@+id/tvNoService"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingLeft="@dimen/_5sdp"
+            android:text="1-24"
+            android:textColor="@color/golden_color_light"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvEngineOil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.35"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center|left"
+            android:text="65.1"
+            android:textColor="@color/golden_color_light"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvCoolant"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.4"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center|left"
+            android:text="26.4"
+            android:textColor="@color/golden_color_light"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"/>
+</LinearLayout>
+
+</RelativeLayout>

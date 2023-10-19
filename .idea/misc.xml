@@ -1,0 +1,24 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/drawable/active_dot.xml" value="0.1205" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/drawable/ic_visibility.xml" value="0.1205" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/activity_calculator_mechanic.xml" value="0.2" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/bottom_sheet_dialog.xml" value="0.2" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/calculator_bonus_list_item.xml" value="0.2" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/calculator_list_item.xml" value="0.2" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/custom_alert_dialog_layout.xml" value="0.2" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/custom_layout.xml" value="0.2" />
+        <entry key="..\:/DeepWorkSpace/DemoCalculator/app/src/main/res/layout/home_item.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
